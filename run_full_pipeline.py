@@ -25,7 +25,7 @@ OUTPUT_DIR = ARGS.output
 TEST_MODE = not ARGS.skip_test
 TEST_N_CONFIGS = ARGS.test_n_configs
 RANDOM_SEED = ARGS.seed
-ELEMENTS=['Na','V','Zn','H','O']; TYPE_TO_ELEMENT={0:'Na',1:'V',2:'Zn',3:'H',4:'O'}
+ELEMENTS=['Zn','O']; TYPE_TO_ELEMENT={0:'Zn',1:'O'}
 SOAP_PARAMS=dict(r_cut=5.5,n_max=8,l_max=6,sigma=0.4,periodic=True)
 OUTPUT_DIR.mkdir(exist_ok=True); (OUTPUT_DIR/'plots').mkdir(exist_ok=True); (OUTPUT_DIR/'soap_cache').mkdir(exist_ok=True)
 print(INPUT_CFG.resolve(),OUTPUT_DIR.resolve())
